@@ -1,0 +1,6 @@
+1) IrishTravelBots code is completly hosted, thus project cannot be run locally.
+2) Only testers assigned to the chatbot within facebook can use this project.
+3) The project consists of a node.js files and php files for the website aspect of the project.
+4) Here are some links relating to the project:	
+	Irish Travel Bot Facebook Page: https://www.facebook.com/irishtravelbot/
+	Irish Travel Bot Website: http://techorama.biz/IrishTravelBot/index.php

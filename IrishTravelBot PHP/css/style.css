@@ -1,0 +1,348 @@
+/* Stock values for CSS */
+/*
+Colour Palette:
+	Black  		   : #222222;
+	Blue (Light)   : #89C4F4;
+	Blue (Dark)    : #48929B;
+	Yellow (Light) : #F5D76E;
+	Yellow (Dark)  : #F3C13A;
+
+Stock Fonts:
+	font-family: 'Raleway', sans-serif;	
+*/
+
+/* Styling main body (Adding parallax)*/
+body
+{
+    background-color: white;
+    -webkit-transition: background-color 0.9s;
+    -moz-transition: background-color 0.9s;
+    -o-transition: background-color 0.9s;
+    transition: background-color 0.9s;
+    position: relative;
+}
+
+/* Styling Pre element */
+pre
+{
+    tab-size: 8;
+}
+
+/* Styling Strong element */
+strong
+{
+    font-size: 20px;
+}
+
+/* Text Style Codes */
+p, a, h1, h2, h3, h4, h5, h6, label, input, textarea
+{
+    font-family: 'Raleway';
+}
+
+p
+{
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+a
+{
+    font-weight: normal;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+
+.bold_text
+{
+    font-weight: bold;
+}
+
+.text_heading
+{
+    color: #26C281;
+}
+
+.align_left
+{
+    text-align: left;
+}
+
+.align_right
+{
+    text-align: right;
+}
+
+.intro_content
+{
+    margin-top: 75px;
+}
+
+.big_text
+{
+    font-size: 45pt;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* Misc. Style Codes */
+.inline
+{
+    display: inline;
+}
+
+.nopadding
+{
+    padding: 0;
+}
+
+.noborder
+{
+    border: none !important;
+}
+
+/* Highlight Colour Modifier */
+::selection
+{
+    background-color: #26C281;
+}
+
+::moz-selection
+{
+    background-color: #26C281;
+}
+
+p::selection,
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection
+{
+    color: white;
+}
+
+/* Styling for mobile devices */
+@media screen and (max-width: 768px)
+{
+    .side-collapse-container
+    {
+        width: 100%;
+        position: relative;
+        left: 0;
+        transition: left .7s;
+    }
+    .side-collapse-container.out
+    {
+        left: 50%;
+    }
+    .side-collapse
+    {
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        position: fixed;
+        overflow: hidden;
+        transition: width .7s;
+    }
+    .side-collapse.in
+    {
+        width: 0;
+    }
+    .jumbotron
+    {
+        text-align: center !important;
+    }
+    .jumbotron h1
+    {
+        margin-top: 25vh !important;
+        margin-bottom: 25px !important;
+    }
+}
+
+/* Remove border radius of navbar */
+.navbar
+{
+    border-radius: 0px !important;
+    margin: 0px;
+    z-index: 1;
+    color: black;
+}
+
+/* Logo */
+.navbar-brand
+{
+    font-size: 16pt;
+    color: black !important;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+/* Navbar styling */
+.navbar
+{
+    border: none;
+    color: black;
+    margin: 0px;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+/* Styling the menu */
+ul.nav a
+{ 
+    color: black;
+    display: block;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+ul.nav a:hover,
+ul.nav a:focus,
+ul.nav a:active
+{ 
+    /*color: #48929B !important;*/
+}
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:hover, 
+.navbar-default .navbar-nav>.open>a:focus
+{
+    background-color: white;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu
+{
+    background-color : white;
+}
+
+.dropdown-menu > li > a
+{}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:active,
+.dropdown-menu > li > a:focus
+{}
+
+/* Mobile Menu */
+.navbar-default .navbar-toggle
+{
+    background-color: #48929B !important;
+    border: none;
+    color: white !important;
+    border-radius: 0px;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus
+{
+    background-color: #F5D76E !important;
+    border: none;
+}
+
+/* Jumbotron */
+.jumbotron
+{
+    background: url('../images/1.jpg') no-repeat center;
+    height: 100vh;
+    display: flex;
+    color: white;
+    text-align: center;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+.jumbotron h1
+{
+    margin-top: 5vh;
+    margin-bottom: 45vh;
+    color: white;
+    text-shadow: #444 0 2px 2px;
+}
+
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h4,
+.jumbotron h5,
+.jumbotron h6,
+.jumbotron p
+{
+    color: white !important;
+    text-shadow: #444 0 2px 2px;
+}
+
+/* Button Styling */
+.btn-info
+{
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+    font-weight: normal;
+    border-radius: 5px;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    padding: 15px;
+}
+
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-info.active,
+.open .dropdown-toggle.btn-info
+{
+    color: white;
+    background-color: #26C281 !important;
+    border: 3px solid #26C281;
+}
+
+.btn-default
+{
+    color: #fff !important;
+    background-color: #3b5998;
+    border: none;
+    font-weight: normal;
+    border-radius: 5px;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default
+{
+    color: white;
+    background-color: #26C281 !important;
+}
